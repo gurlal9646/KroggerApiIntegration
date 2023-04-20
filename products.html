@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+    <h1> Unveil the secrets of Kroggers' store and experience their best products.</h1>
+    <form onsubmit="onSubmit(event)" onreset="onReset()">
+        <label for="input-filter-term">Product Name</label>
+        <input
+          type="text"
+          name="term"
+          id="input-filter-term"
+          placeholder="Enter Product Name"
+        />
+        <label for="input-category">Product Category</label>
+        <select id="input-category" name="category">
+          <option value="milk">Milk</option>
+          <option value="bread">Bread</option>
+          <option value="flour">Flour</option>
+          <option value="butter">Butter</option>
+          <option value="oil">Oil</option>
+          <option value="cheese">Cheese</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="fruit">Fruit</option>
+          <option value="meat">Meat</option>
+          <option value="seafood">Seafood</option>
+          <option value="spices">Spices</option>
+          <option value="nuts">Nuts</option>
+        </select>
+        <button type="submit">Apply filters</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="redirectStores()">Back to Stores</button>
+      </form>
+    <div class="product-container" id="products-list">
+
+      </div>
+      <script src="products.js"></script>
+</body>
+</html>

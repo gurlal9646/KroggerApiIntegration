@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stores</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1>Experience the Best of Kroggers - Unveiling Our Store Secrets!</h1>
+    <form onsubmit="onSubmit(event)" onreset="onReset()">
+        <label for="input-filter-term">Store Name</label>
+        <input
+          type="text"
+          name="term"
+          id="input-filter-term"
+          placeholder="Enter Store Name"
+        />
+        <button type="submit">Apply filters</button>
+        <button type="reset">Reset</button>
+      </form>
+    <div id="stores" class="card-container"></div>
+    <script src="stores.js"></script>
+</body>
+</html>
